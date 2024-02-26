@@ -6,7 +6,7 @@ ThemeData theme() => ThemeData(
     appBarTheme: appBarTheme());
 
 AppBarTheme appBarTheme() => const AppBarTheme(
-      color: Colors.white,
+      color: Colors.blueAccent,
       elevation: 0,
       centerTitle: true,
       iconTheme: IconThemeData(
