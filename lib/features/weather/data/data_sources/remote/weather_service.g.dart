@@ -25,8 +25,8 @@ class _WeatherApiService implements WeatherApiService {
     String? apiKey,
     String? place,
     int? forecastDays,
-    int? airQuality,
-    int? alerts,
+    String? airQuality,
+    String? alerts,
   }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{
