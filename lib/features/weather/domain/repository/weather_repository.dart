@@ -1,9 +1,9 @@
 import 'package:weather_clean/core/resources/data_state.dart';
-import 'package:weather_clean/features/weather/data/models/weather.dart';
+import 'package:weather_clean/features/weather/domain/entities/weather.dart';
 
 abstract class WeatherRepository {
   // API methods
-  Future<DataState<WeatherModel>> getWeather();
+  Future<DataState<WeatherEntity>> getWeather();
 
   //TODO: Implement other methods...
 }
