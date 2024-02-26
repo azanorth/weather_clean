@@ -15,7 +15,7 @@ abstract class WeatherApiService {
     @Query('key') String? apiKey,
     @Query('q') String? place,
     @Query('days') int? forecastDays,
-    @Query('aqi') int? airQuality,
-    @Query('alerts') int? alerts,
+    @Query('aqi') String? airQuality,
+    @Query('alerts') String? alerts,
   });
 }
