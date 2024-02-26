@@ -4,7 +4,7 @@ import 'package:dio/dio.dart';
 
 import 'package:weather_clean/core/constants/constants.dart';
 import 'package:weather_clean/core/resources/data_state.dart';
-import 'package:weather_clean/features/weather/data/models/weather.dart';
+import 'package:weather_clean/features/weather/domain/entities/weather.dart';
 import 'package:weather_clean/features/weather/domain/repository/weather_repository.dart';
 import 'package:weather_clean/features/weather/data/data_sources/remote/weather_service.dart';
 
@@ -14,7 +14,7 @@ class WeatherRepositoryImpl implements WeatherRepository {
   WeatherRepositoryImpl(this._apiService);
 
   @override
-  Future<DataState<WeatherModel>> getWeather() async {
+  Future<DataState<WeatherEntity>> getWeather() async {
     try {
       final httpResponse = await _apiService.getWeather(
         apiKey: weatherAPIKey,
